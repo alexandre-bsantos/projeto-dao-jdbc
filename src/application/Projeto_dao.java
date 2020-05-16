@@ -22,6 +22,10 @@ public class Projeto_dao {
 		List<Seller> list = sellerDao.findByDepartment(department);
 		list.forEach(System.out::println);
 		
+		System.out.println("\n=== TEST 3: seller findAll ===");
+		List<Seller> listAll = sellerDao.findAll();
+		listAll.forEach(System.out::println);
+		
 	}
 
 }
